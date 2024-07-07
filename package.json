@@ -1,0 +1,8 @@
+{
+  "name": "export-wav",
+  "version": "0.0.1",
+  "description": "mic-to-wav",
+  "main": "index.js",
+  "author": "gentlee",
+  "license": "MIT"
+}
