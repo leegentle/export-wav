@@ -1,6 +1,6 @@
 {
   "name": "export-wav",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "mic-to-wav",
   "type": "module",
   "main": "dist/index.js",
