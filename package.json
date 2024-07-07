@@ -2,7 +2,27 @@
   "name": "export-wav",
   "version": "0.0.1",
   "description": "mic-to-wav",
-  "main": "index.js",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepack": "yarn build",
+    "build": "yarn build:tsc",
+    "build:tsc": "yarn tsc"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./src/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "author": "gentlee",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "ts-node": "^10.9.2"
+  }
 }
